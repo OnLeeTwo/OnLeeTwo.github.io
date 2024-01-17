@@ -1,0 +1,134 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+header{
+    text-align: center;
+    color: white;
+    border-radius:5px;
+}
+/* Kalkulator Persegi */
+header h1{
+    background-color: #2D3250;
+    padding: 20px;
+    border:5px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-block-end: 0px;
+    color: white;
+}
+/* Selamat datang */
+header h4{
+    padding-top: 5px;
+    margin-top: 0px;
+    margin-block-end: 0px;
+    background-color: #424769;
+}
+/* Web ini... */
+header p{
+    background-color: #424769;
+    padding:10px;
+    font-size:small;
+    margin-block-start: 0px;
+    margin-block-end:0px;
+}
+nav{
+    color:white;
+    background-color: #7077A1;
+    padding: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: -webkit-sticky; /* For Safari Users */
+    position: sticky;
+    top:0;
+}
+nav a{
+    border: 2px solid #7077A1;
+    border-radius: 3px;
+    padding: 3px;
+    color:white;
+    text-decoration: none;
+}
+nav a:hover{
+    border: 2px solid white;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 150ms ease-out;
+}
+nav a:active{
+    border: 2px solid rgba(137, 134, 134, 0.997);
+
+}
+body{
+    background-color: #F6B17A;
+    margin:0px;
+}
+section{
+    margin:auto;
+    border:none;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: antiquewhite;
+    max-width:750px;
+    padding:15px;
+    text-align: center;
+}
+section img{
+    width: 250px;
+    height: 250px;
+}
+section p{
+    text-align: left;
+}
+.formula{
+    width:fit-content;
+    padding: 2px 4px 2px 4px;
+    border:solid black;
+    margin:auto;
+}
+.input{
+    display:flex;
+    flex-direction: column;
+}
+.inputform {
+    outline: none;
+    margin-top:10px;
+    border-radius: 8px;
+    border: solid #7980ab;
+    padding: 10px;
+}
+#squareSide:focus{
+    border: solid #2D3250;
+}
+.result{
+    white-space: pre-line;
+    text-align: left;
+}
+button{
+    margin-top : 10px;
+    background-color: #F6B17A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ec9249;
+}
+button:active{
+    background-color: #f17e20;
+    transform: translateY(1px)
+}
+footer{
+    text-align: center;
+    font-size: x-small;
+    background-color: #2D3250;
+    margin : 0px;
+    padding : 5px;
+    color: white;
+}
+#top{
+    color:white;
+    text-align: right;
+}
