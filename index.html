@@ -1,84 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title> Kalkulator Persegi</title>
-        <script src="js/index.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Kalkulator Persegi</h1>
-            <h4>Selamat datang di website untuk membantu perhitungan Persegi!</h4>
-            <p>Web ini dirancang sebagai salah satu mini project di Fundamental Course Software Engineering di RevoU</p>
-        </header>
-        <nav class="menu">
-            <a href="#perimeter">Keliling Persegi </a>
-            <a href="#area">Luas Persegi</a>
-            <a href="#diagonal">Diagonal Persegi</a>
-        </nav>
-        <br>
-        <section class="square" id="perimeter">
-            <h2>Keliling Persegi</h2>
-            <img src="assets/square.png" alt="Keliling Persegi">
-            <p>Untuk menghitung keliling persegi, digunakan rumus:</p>
-            <h4 class="formula">K = 4 &times; a </h4>
-            <p>Dimana:<br>K = Keliling persegi (cm)<br>a = Sisi persegi (cm)<br>(Catatan: satuan bebas)</p>
-            <div class="input" id="inputPerimeter">
-                <label for="squareSidePerimeter" id="labelPerimeter">Hitung Keliling Persegi</label>
-                <input type="number" class="inputform" id="squareSidePerimeter" placeholder="Masukan sisi persegi untuk menghitung keliling (dalam cm)">
-            </div>
-            <div>
-                <div class="button">
-                    <button onclick="perimeter()" id="hitungButtonPerimeter">Hitung</button>
-                    <button onclick="perimeterReset()" id="resetButtonPerimeter">Reset</button>
-                </div>
-            </div>
-            <div class="result" id="perimeterResult"></div>
-        </section>
-        <br><br>
-        <section class="square" id="area">
-            <h2>Luas Persegi</h2>
-            <img src="assets/square2.png" alt="Luas Persegi">
-            <p>Untuk menghitung luas persegi, digunakan rumus:</p>
-            <h4 class="formula">A = a &times; a </h4>
-            <p>Dimana:<br>A = Luas persegi (cm²)<br>a = Sisi persegi (cm)<br>(Catatan: satuan bebas)</p>
-            <div class="input" id="inputArea">
-                <label for="squareSideArea" id="labelArea">Hitung Luas Persegi</label>
-                <input type="number" class="inputform" id="squareSideArea" placeholder="Masukan sisi persegi untuk menghitung luas (dalam cm)">
-            </div>
-            <div>
-                <div class="button">
-                    <button onclick="area()" id="hitungButtonArea">Hitung</button>
-                    <button onclick="areaReset()" id="resetButtonArea">Reset</button>
-                </div>
-            </div>
-            <p class="result" id="areaResult"></p>
-        </section>
-        <br><br>
-        <section class="square" id="diagonal">
-            <h2>Diagonal Persegi</h2>
-            <img src="assets/square3.png" alt="Diagonal Persegi">
-            <p>Untuk menghitung diagonal persegi, digunakan rumus:</p>
-            <h4 class="formula">d = a&radic;2 </h4>
-            <p>Dimana:<br>d = Diagonal persegi (cm)<br>a = Sisi persegi (cm)<br>(Catatan: satuan bebas)</p>
-            <div class="input" id="inputDiagonal">
-                <label for="squareSideDiagonal" id="labelDiagonal">Hitung Diagonal Persegi</label>
-                <input type="number" class="inputform" id="squareSideDiagonal" placeholder="Masukan sisi persegi untuk menghitung diagonal (dalam cm)">
-            </div>
-            <div>
-                <div class="button">
-                    <button onclick="diagonal()" id="hitungButtonDiagonal">Hitung</button>
-                    <button onclick="diagonalReset()" id="resetButtonDiagonal">Reset</button>
-                </div>
-            </div>
-            <div class="result" id="diagonalResult"></div>
-        </section>
-        <br><br>
-        <footer>
-            <p>Dibuat Oleh: Owent Ovandy <br> 17 Januari 2024</p>
-            <a href="#" id="top">Back to top</a>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kalkulator Persegi</title>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator Persegi</h1>
+      <h4>Selamat datang di website untuk membantu perhitungan Persegi!</h4>
+      <p>
+        Web ini dirancang sebagai salah satu mini project di Fundamental Course
+        Software Engineering di RevoU
+      </p>
+    </header>
+    <nav class="menu">
+      <a href="#perimeter">Keliling Persegi </a>
+      <a href="#area">Luas Persegi</a>
+      <a href="#diagonal">Diagonal Persegi</a>
+    </nav>
+    <br />
+    <section class="square" id="perimeter">
+      <h2>Keliling Persegi</h2>
+      <img src="/assets/square.png" alt="Keliling Persegi" />
+      <p>Untuk menghitung keliling persegi, digunakan rumus:</p>
+      <h4 class="formula">K = 4 &times; a</h4>
+      <p>
+        Dimana:<br />K = Keliling persegi (cm)<br />a = Sisi persegi (cm)<br />(Catatan:
+        satuan bebas)
+      </p>
+      <div class="input" id="inputPerimeter">
+        <label for="squareSidePerimeter" id="labelPerimeter"
+          >Hitung Keliling Persegi</label
+        >
+        <input
+          type="number"
+          class="inputform"
+          id="squareSidePerimeter"
+          placeholder="Masukan sisi persegi untuk menghitung keliling (dalam cm)"
+        />
+      </div>
+      <div>
+        <div class="button">
+          <button onclick="perimeter()" id="hitungButtonPerimeter">
+            Hitung
+          </button>
+          <button onclick="perimeterReset()" id="resetButtonPerimeter">
+            Reset
+          </button>
+        </div>
+      </div>
+      <div class="result" id="perimeterResult"></div>
+    </section>
+    <br /><br />
+    <section class="square" id="area">
+      <h2>Luas Persegi</h2>
+      <img src="assets/square2.png" alt="Luas Persegi" />
+      <p>Untuk menghitung luas persegi, digunakan rumus:</p>
+      <h4 class="formula">A = a &times; a</h4>
+      <p>
+        Dimana:<br />A = Luas persegi (cm²)<br />a = Sisi persegi (cm)<br />(Catatan:
+        satuan bebas)
+      </p>
+      <div class="input" id="inputArea">
+        <label for="squareSideArea" id="labelArea">Hitung Luas Persegi</label>
+        <input
+          type="number"
+          class="inputform"
+          id="squareSideArea"
+          placeholder="Masukan sisi persegi untuk menghitung luas (dalam cm)"
+        />
+      </div>
+      <div>
+        <div class="button">
+          <button onclick="area()" id="hitungButtonArea">Hitung</button>
+          <button onclick="areaReset()" id="resetButtonArea">Reset</button>
+        </div>
+      </div>
+      <p class="result" id="areaResult"></p>
+    </section>
+    <br /><br />
+    <section class="square" id="diagonal">
+      <h2>Diagonal Persegi</h2>
+      <img src="assets/square3.png" alt="Diagonal Persegi" />
+      <p>Untuk menghitung diagonal persegi, digunakan rumus:</p>
+      <h4 class="formula">d = a&radic;2</h4>
+      <p>
+        Dimana:<br />d = Diagonal persegi (cm)<br />a = Sisi persegi (cm)<br />(Catatan:
+        satuan bebas)
+      </p>
+      <div class="input" id="inputDiagonal">
+        <label for="squareSideDiagonal" id="labelDiagonal"
+          >Hitung Diagonal Persegi</label
+        >
+        <input
+          type="number"
+          class="inputform"
+          id="squareSideDiagonal"
+          placeholder="Masukan sisi persegi untuk menghitung diagonal (dalam cm)"
+        />
+      </div>
+      <div>
+        <div class="button">
+          <button onclick="diagonal()" id="hitungButtonDiagonal">Hitung</button>
+          <button onclick="diagonalReset()" id="resetButtonDiagonal">
+            Reset
+          </button>
+        </div>
+      </div>
+      <div class="result" id="diagonalResult"></div>
+    </section>
+    <br /><br />
+    <footer>
+      <p>
+        Dibuat Oleh: Owent Ovandy <br />
+        17 Januari 2024
+      </p>
+      <a href="#" id="top">Back to top</a>
+    </footer>
+  </body>
 </html>
